@@ -1,0 +1,15 @@
+
+
+#sidebar {
+	display: block;
+	height: 100%;
+	width:300px;
+	position: fixed;
+	background-color: #ffd7a7;
+	left: 0px;
+	top: 0px;
+}
+
+#profilePic {
+	
+}
