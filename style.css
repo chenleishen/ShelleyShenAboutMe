@@ -9,10 +9,16 @@ html, body, head {
 	src: url(BebasNeue.otf);
 }
 
+@font-face {
+	font-family: 'FunSized';
+	src: url(FunSized.ttf);
+}
+
 #sidebar {
 	height: 100%;
 	width: 250px;
-	/*position: fixed;*/
+	position: fixed;
+	display: inline-block;
 	left: 0px;
 	top: 0px;
 	font-family: BebasNeue;
@@ -87,6 +93,7 @@ html, body, head {
 	position:absolute;
 	bottom:0;
 	background-color: #FF5050;
+	color:#FFFFFF;
 }
 
 #contactMe h2 {
@@ -95,8 +102,16 @@ html, body, head {
 }
 
 #mainContent{
-	display: block;
-	background-color: #B2FFE6;
-	height:100%;
+	font-family: Arial;
+	margin-left:250px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-right: 5px; 
+}
+
+#frontPage img{
+	max-width: 100%;
+    height: auto;
+    width: auto;
 }
 
