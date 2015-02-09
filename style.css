@@ -6,12 +6,12 @@ html, body, head {
 
 @font-face {
 	font-family:'BebasNeue';
-	src: url(BebasNeue.otf);
+	src: url(Fonts/BebasNeue.otf);
 }
 
 @font-face {
 	font-family: 'FunSized';
-	src: url(FunSized.ttf);
+	src: url(Fonts/FunSized.ttf);
 }
 
 #sidebar {
@@ -26,20 +26,9 @@ html, body, head {
 	text-align: center;
 	margin:0px;
 	padding-top: 0px;
+	box-shadow: 5px 0px 5px #dcdcdc;
+	/*background-color: #F5F5F5;*/
 }
-
-/*#greeting {
-	font-family: FunSized;
-	font-size: 180%;
-	width:250px;
-	background-color:#FF5050;
-	color:#FFFFFF;
-}
-
-#greeting h1{
-	padding:0px;
-	margin:0px;
-}*/
 
 #profilePic {
 	height: 100px;
@@ -104,14 +93,28 @@ html, body, head {
 #mainContent{
 	font-family: Arial;
 	margin-left:250px;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-right: 5px; 
+}
+
+#frontPage{
+	background-color: #F5F5F5;
+	padding: 40px;
 }
 
 #frontPage img{
 	max-width: 100%;
     height: auto;
     width: auto;
+}
+
+#AboutMe {
+	padding: 20px;
+}
+
+#MyProjects {
+	padding: 20px;
+}
+
+#Experiences {
+	padding: 20px;
 }
 
