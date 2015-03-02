@@ -4,6 +4,24 @@ html, body, head {
     padding: 0;
 }
 
+#menulist a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+#menulist a:hover {
+	text-decoration: none;
+	background-color: #666699;
+    color: #FFFFFF;
+}
+
+/* selected link 
+#menulist a:active {
+	text-decoration: none;
+    background-color: #666699;
+    color: #FFFFFF;
+}*/
+
 @font-face {
 	font-family:'BebasNeue';
 	src: url(Fonts/BebasNeue.otf);
@@ -26,7 +44,7 @@ html, body, head {
 	text-align: center;
 	margin:0px;
 	padding-top: 0px;
-	box-shadow: 5px 0px 5px #dcdcdc;
+	/*box-shadow: 5px 0px 5px #dcdcdc;*/
 	/*background-color: #F5F5F5;*/
 }
 
@@ -52,6 +70,7 @@ html, body, head {
 #ContactInfo h5 {
 	margin: 0;
 	font-weight: 100;
+	font-family: Arial;
 }
 
 #menu {
@@ -88,6 +107,7 @@ html, body, head {
 #contactMe h2 {
 	padding: 0px;
 	margin: 0px;
+	font-weight: 100;
 }
 
 #mainContent{
@@ -106,15 +126,72 @@ html, body, head {
     width: auto;
 }
 
+#AboutMe h1, #MyProjects h1, #Experiences h1 {
+	font-family: BebasNeue;
+}
+
 #AboutMe {
 	padding: 20px;
+	background-color: #DF5972;
+}
+
+#AboutMe ul {
+	list-style-type: none;
+}
+
+.table {
+	float: left;
+}
+
+.table tr {
+	padding:5px
+}
+
+.table td {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.table tr:nth-child(2){
+	width:135;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.table img {
+	height:20px;
+	width: 20px;
+}
+
+#skills {
+	display: inline-block;
+}
+
+#more img{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
 }
 
 #MyProjects {
 	padding: 20px;
+	background-color: #4E928E;
 }
 
 #Experiences {
 	padding: 20px;
+	background-color: #DEE458;
 }
 
+.AMcontact {
+	text-align: center;
+}
+
+.AMcontact img{
+	padding-left:20px;
+	padding-right: 20px;
+}
+
+#Experiences ul {
+	list-style-type: none;
+}
