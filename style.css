@@ -4,24 +4,6 @@ html, body, head {
     padding: 0;
 }
 
-#menulist a:link {
-    text-decoration: none;
-    color: #000000;
-}
-
-#menulist a:hover {
-	text-decoration: none;
-	background-color: #666699;
-    color: #FFFFFF;
-}
-
-/* selected link 
-#menulist a:active {
-	text-decoration: none;
-    background-color: #666699;
-    color: #FFFFFF;
-}*/
-
 @font-face {
 	font-family:'BebasNeue';
 	src: url(Fonts/BebasNeue.otf);
@@ -44,6 +26,7 @@ html, body, head {
 	text-align: center;
 	margin:0px;
 	padding-top: 0px;
+	color: #383838;
 	/*box-shadow: 5px 0px 5px #dcdcdc;*/
 	/*background-color: #F5F5F5;*/
 }
@@ -95,6 +78,10 @@ html, body, head {
 	float: left;
 }
 
+#menulist a:link, #menulist a:visited, #menulist a:hover, #menulist a:active{
+    color: #383838;
+    text-decoration: none;
+}
 
 #contactMe {
 	width:250px;
@@ -113,6 +100,7 @@ html, body, head {
 #mainContent{
 	font-family: Arial;
 	margin-left:250px;
+	color: #383838;
 }
 
 #frontPage{
@@ -132,7 +120,10 @@ html, body, head {
 
 #AboutMe {
 	padding: 20px;
-	background-color: #DF5972;
+	background-color: #F5F5F5;
+	border-top: solid;
+	border-width: 1px;
+	border-color: #BDBDBD;
 }
 
 #AboutMe ul {
@@ -167,22 +158,6 @@ html, body, head {
 	display: inline-block;
 }
 
-#more img{
-	height: 50px;
-	width: 50px;
-	border-radius: 50%;
-}
-
-#MyProjects {
-	padding: 20px;
-	background-color: #4E928E;
-}
-
-#Experiences {
-	padding: 20px;
-	background-color: #DEE458;
-}
-
 .AMcontact {
 	text-align: center;
 }
@@ -190,6 +165,35 @@ html, body, head {
 .AMcontact img{
 	padding-left:20px;
 	padding-right: 20px;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+
+#MyProjects {
+	padding: 20px;
+	background-color: #F5F5F5;
+	border-top: solid;
+	border-width: 1px;
+	border-color: #BDBDBD;
+}
+
+#projects {
+	text-align: center;
+}
+
+#projects img{
+	height: 200px;
+	width: 200px;
+	padding: 20px;
+}
+
+#Experiences {
+	padding: 20px;
+	background-color: #F5F5F5;
+	border-top: solid;
+	border-width: 1px;
+	border-color: #BDBDBD;
 }
 
 #Experiences ul {
