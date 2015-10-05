@@ -199,3 +199,19 @@ html, body, head {
 #Experiences ul {
 	list-style-type: none;
 }
+
+/*phone*/
+@media only screen 
+  and (min-device-width: 340px) 
+  and (max-device-width: 660px) {
+
+}
+
+/*ipad*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) {
+
+}
+
+
