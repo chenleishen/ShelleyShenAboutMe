@@ -14,6 +14,33 @@ html, body, head {
 	src: url(Fonts/FunSized.ttf);
 }
 
+@font-face {
+	font-family: 'OpenSans';
+	src: url(Fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Lobster';
+	src: url(Fonts/Lobster_1.3.otf);
+}
+
+/* overriding BootStrap CSS*/
+* {
+	box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    /* box-sizing: border-box; */
+}
+
+a {
+	color: inherit;
+}
+
+a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+
 #sidebar {
 	height: 100%;
 	width: 250px;
@@ -27,6 +54,7 @@ html, body, head {
 	margin:0px;
 	padding-top: 0px;
 	color: #383838;
+/*	overflow: auto;*/
 	/*box-shadow: 5px 0px 5px #dcdcdc;*/
 	/*background-color: #F5F5F5;*/
 }
@@ -53,7 +81,8 @@ html, body, head {
 #ContactInfo h5 {
 	margin: 0;
 	font-weight: 100;
-	font-family: Arial;
+	font-family: OpenSans;
+	font-size: 14px;
 }
 
 #menu {
@@ -88,30 +117,40 @@ html, body, head {
 	position:absolute;
 	bottom:0;
 	background-color: #FF5050;
-	color:#FFFFFF;
 }
 
-#contactMe h2 {
-	padding: 0px;
+#contactMe a {
+	padding-top: 5px;
 	margin: 0px;
 	font-weight: 100;
+	font-family: Lobster;
+	color:#FFFFFF;
+	text-decoration: none;
 }
 
 #mainContent{
-	font-family: Arial;
-	margin-left:250px;
-	color: #383838;
+	font-family: 'Open Sans';
+	margin-left: 250px;
+	/*color: #383838;*/
+	color:#4b4a48;
+	/*background-color: #FAF8F3;*/
+}
+
+#mainContent p {
+	font-size: 15px;
 }
 
 #frontPage{
-	background-color: #F5F5F5;
 	padding: 40px;
+	text-align: center;
+	background-color: #E5E5EF;
+	/*background-color: #F7F7FA;*/
 }
 
 #frontPage img{
-	max-width: 100%;
+	max-width: 800px;
     height: auto;
-    width: auto;
+    width: 100%;
 }
 
 #AboutMe h1, #MyProjects h1, #Experiences h1 {
@@ -119,11 +158,12 @@ html, body, head {
 }
 
 #AboutMe {
-	padding: 20px;
-	background-color: #F5F5F5;
+	padding-left: 8%;
+	padding-right: 8%;
 	border-top: solid;
 	border-width: 1px;
 	border-color: #BDBDBD;
+	background-color: #F9F9F9;
 }
 
 #AboutMe ul {
@@ -155,14 +195,21 @@ html, body, head {
 }
 
 #skills {
-	display: inline-block;
 }
 
-.AMcontact {
+table td{
+ width: 120px;
+}
+
+.table {
+	
+}
+
+.shelleyContact {
 	text-align: center;
 }
 
-.AMcontact img{
+.shelleyContact img{
 	padding-left:20px;
 	padding-right: 20px;
 	height: 50px;
@@ -172,10 +219,10 @@ html, body, head {
 
 #MyProjects {
 	padding: 20px;
-	background-color: #F5F5F5;
 	border-top: solid;
 	border-width: 1px;
 	border-color: #BDBDBD;
+	background-color: #E5E5EF;
 }
 
 #projects {
@@ -185,19 +232,70 @@ html, body, head {
 #projects img{
 	height: 200px;
 	width: 200px;
-	padding: 20px;
+	padding: 3%;
 }
 
 #Experiences {
-	padding: 20px;
-	background-color: #F5F5F5;
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-bottom: 2%;
 	border-top: solid;
 	border-width: 1px;
 	border-color: #BDBDBD;
+	background-color: #F9F9F9;
 }
 
 #Experiences ul {
 	list-style-type: none;
+}
+
+.drawing {
+ padding: 0px;
+ margin: 0px;
+}
+
+#timeline {
+ margin: 20px;
+}
+
+.tlDateLabel {
+ position: relative;
+ color: #888;
+ text-align: right;
+ font-style: italic;
+ display: inline-block;
+ width: 80px;
+}
+
+.tlEventFlag {
+	width: 200px;
+ background-color: #5cac73;
+ font-size: 15px;
+ padding: 4px 0px 4px 5px;
+ color: #fff;
+ cursor: pointer;
+ display: inline-block;
+}
+
+.tlEventExpand {
+ width: 100%;
+ background-color: #5cac73;
+ font-size: 15px;
+ padding: 5px;
+ color: #fff;
+}
+
+.tlEventIcon {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	margin: 5px;
+	border-width: 10px;
+	border-color: #ffffff;
+	border-style: solid;
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(128,125,128,1);
+	-moz-box-shadow: 0px 0px 5px 1px rgba(128,125,128,1);
+	box-shadow: 0px 0px 5px 1px rgba(128,125,128,1);
 }
 
 /*phone*/
@@ -213,5 +311,6 @@ html, body, head {
   and (max-device-width: 1024px) {
 
 }
+
 
 
