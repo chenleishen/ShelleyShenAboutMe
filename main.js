@@ -24,10 +24,10 @@ $(document).ready(function() {
         $("#timeline").timeline({
             data: [{date: new Date(2015,08,01),  
                     title: "Software Designer", 
-                    location: "Nokia (formerly Alcatl-Lucent), Ottawa, ON",
-                    description: "Designed, built, tested, and deployed two new network element for Nokia's Network Services Platform, a network service provisioning product,"+
+                    location: "Nokia (formerly Alcatel-Lucent), Ottawa, ON",
+                    description: "Designed, built, tested, and deployed two new network element for Nokia's Network Services Platform, a network service provisioning product, "+
                     "to meet client objectives.\n"+
-                    "The two features developed provide users with options to set secondary ip addresses and static routes corresponding to their primary ip address"+
+                    "The two features developed provide users with options to set secondary ip addresses and static routes corresponding to their primary ip address "+
                     "and allows user to select and set their ingress and egress limit",
                     image: "nokia" },
 
