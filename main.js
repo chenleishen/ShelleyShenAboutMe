@@ -11,26 +11,35 @@ $(document).ready(function() {
         var contactInfo = $("#ContactInfo");
         var mainContent = $("#mainContent");
         var contactMe = $("#contactMe");
+        var menu = $("#menu");
 
         if (windowsize < 800) {
             //if the window is greater than 440px wide then turn on jScrollPane..
-            console.log("smaller than 320");
             contactInfo.hide();
             contactMe.hide();
+            menu.css({margin: "20px"});
 
             sidebar.css({ width: "100%" , position: "absolute"});
-            mainContent.css({"margin-left": "0px", "margin-top": "70px"});
+            mainContent.css({"margin-left": "0px", "margin-top": "75px"});
             profilePic.css({top: "-15px", left: "10px", position: 'absolute', width: "60px", height: "60px"});
 
             profilePic.click(function(){
-                $("#mainContent").css({"margin-top": "270px"});
+                if (mainContent.css("margin-top") == "75px") {
+                    mainContent.css({"margin-top": "275px"});
+                }
+                else {
+                    mainContent.css({"margin-top": "75px"})
+                }
             })
         }
 
         if (windowsize > 800) {
-            sidebar.css({left: 0, position: "fixed"});
+            contactInfo.show();
+            contactMe.show();
+            menu.css({margin: "0px"});
+            profilePic.css({top: "0px", left: "0px", position: 'static'});
+            sidebar.css({left: 0, position: "fixed", width: "250px"});
             mainContent.css({"margin-left": "250px", "margin-top": "0px"});
-            profilePic.css({position: 'static'});
         }
     }
     // Execute on load
