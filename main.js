@@ -1,16 +1,36 @@
 
 $(document).ready(function() {
     // put your jQuery code here.
-
-    console.log("works");
     
     var $window = $(window);
 
     function checkWidth() {
         var windowsize = $window.width();
-        if (windowsize < 500) {
+        var profilePic = $("#profilePic");
+        var sidebar = $("#sidebar");
+        var contactInfo = $("#ContactInfo");
+        var mainContent = $("#mainContent");
+        var contactMe = $("#contactMe");
+
+        if (windowsize < 800) {
             //if the window is greater than 440px wide then turn on jScrollPane..
             console.log("smaller than 320");
+            contactInfo.hide();
+            contactMe.hide();
+
+            sidebar.css({ width: "100%" , position: "absolute"});
+            mainContent.css({"margin-left": "0px", "margin-top": "70px"});
+            profilePic.css({top: "-15px", left: "10px", position: 'absolute', width: "60px", height: "60px"});
+
+            profilePic.click(function(){
+                $("#mainContent").css({"margin-top": "270px"});
+            })
+        }
+
+        if (windowsize > 800) {
+            sidebar.css({left: 0, position: "fixed"});
+            mainContent.css({"margin-left": "250px", "margin-top": "0px"});
+            profilePic.css({position: 'static'});
         }
     }
     // Execute on load

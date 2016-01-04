@@ -162,6 +162,7 @@ a:hover {
 	/*color: #383838;*/
 	color:#4b4a48;
 	/*background-color: #FAF8F3;*/
+	position: relative;
 }
 
 #mainContent p {
