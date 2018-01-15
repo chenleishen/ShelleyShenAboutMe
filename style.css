@@ -1,30 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 html, body, head {
     margin: 0;
     padding: 0;
 }
 
-@font-face {
-	font-family:'BebasNeue';
-	src: url(Fonts/BebasNeue.otf);
-}
-
-@font-face {
-	font-family: 'FunSized';
-	src: url(Fonts/FunSized.ttf);
-}
-
-@font-face {
-	font-family: 'OpenSans';
-	src: url(Fonts/OpenSans-Regular.ttf);
-}
-
-@font-face {
-	font-family: 'Lobster';
-	src: url(Fonts/Lobster_1.3.otf);
-}
-
-/**************************** overriding BootStrap CSS ****************************/
 * {
 	box-sizing: content-box;
 	-webkit-box-sizing: content-box;
@@ -40,203 +20,25 @@ a:hover {
 	text-decoration: none;
 }
 
-.progress {
-	background-color: rgba(219, 219, 226, 0.44);
-	box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
-	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
-    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
-}
-
-.carousel {
-	background-color: #E5E5EF;
-}
-
-.carousel-control.left {
-	background-image: none;
-}
-
-.carousel-control.right {
-	background-image: none;
-}
-
-.carousel-caption {
-	background-color: rgba(0, 0, 0, 0.5);
-}
-
-.carousel-indicators {
-	/*background-color: rgba(0, 0, 0, 0.5);*/
-}
-
-/**************************** overriding BootStrap CSS ****************************/
-
-#sidebar {
-	height: 100%;
-	width: 250px;
-	position: fixed;
-	display: inline-block;
-	left: 0px;
-	top: 0px;
-	font-family: BebasNeue;
-	font-size: 120%;
-	text-align: center;
-	margin:0px;
-	padding-top: 0px;
-	color: #383838;
-/*	overflow: auto;*/
-	/*box-shadow: 5px 0px 5px #dcdcdc;*/
-	/*background-color: #F5F5F5;*/
+.profilePicture {
+  text-align: center;
+  padding-top: 50px;
+	padding-bottom: 40px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #profilePic {
-	height: 100px;
-	width: 100px;
+	height: 80px;
+	width: 80px;
 	border-radius: 50%;
 	margin-top: 25px;
 	margin-bottom: 5px;
 }
 
-#ContactInfo {
-	width: 250px;
-	margin-top:5px;
-	margin-bottom: 50px;
-}
-
-#ContactInfo h1 {
-	display:block;
-	margin: 0;
-}
-
-#ContactInfo h5 {
-	margin: 0;
-	font-weight: 100;
-	font-family: OpenSans;
-	font-size: 14px;
-}
-
-#menu {
-	float:center;
-	width: 250px;
-}
-
-#menu ul {
-    list-style-type: none;
-}
-
-#menu ul li h3{
-    font-weight: 100;
-    padding: 11px 0px 11px 0px;
-    margin:0px;
-    float: center;
-}
-
-.menuItem img {
-	width:50px;
-	height:50px;
-	float: left;
-}
-
-#menulist a:link, #menulist a:visited, #menulist a:hover, #menulist a:active{
-    color: #383838;
-    text-decoration: none;
-}
-
-#contactMe {
-	width:250px;
-	position:absolute;
-	bottom:0;
-	background-color: #4A4A4A;
-}
-
-#contactMe a {
-	margin-top: 10px;
-	font-weight: 100;
-	font-family: Lobster;
-	color:#FFFFFF;
-	text-decoration: none;
-	font-size: 20px;
-}
-
-#mainContent{
-	font-family: 'Open Sans';
-	margin-left: 250px;
-	/*color: #383838;*/
-	color:#4b4a48;
-	/*background-color: #FAF8F3;*/
-	position: relative;
-}
-
-#mainContent p {
-	font-size: 15px;
-}
-
-#frontPage{
-	padding: 40px;
-	text-align: center;
-	background-color: #E5E5EF;
-	/*background-color: #F7F7FA;*/
-}
-
-#frontPage img{
-	max-width: 800px;
-    height: auto;
-    width: 100%;
-}
-
-#AboutMe h1, #MyProjects h1, #Experiences h1 {
-	font-family: BebasNeue;
-}
-
-#AboutMe {
-	padding-left: 8%;
-	padding-right: 8%;
-	border-top: solid;
-	border-width: 1px;
-	border-color: #BDBDBD;
-	background-color: #F9F9F9;
-}
-
-#AboutMe ul {
-	list-style-type: none;
-}
-
-.table {
-	float: left;
-}
-
-.table tr {
-	padding:5px
-}
-
-.table td {
-	padding-left: 5px;
-	padding-right: 5px;
-}
-
-.table tr:nth-child(2){
-	width:135;
-	padding-left: 5px;
-	padding-right: 5px;
-}
-
-.table img {
-	height:20px;
-	width: 20px;
-}
-
-#skills {
-}
-
-table td{
- width: 120px;
-}
-
-.table {
-
-}
-
 .shelleyContact {
 	text-align: center;
 	padding-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .shelleyContact img{
@@ -247,102 +49,19 @@ table td{
 	border-radius: 50%;
 }
 
-#MyProjects {
-	padding: 20px;
-	border-top: solid;
-	border-width: 1px;
-	border-color: #BDBDBD;
-	background-color: #E5E5EF;
+/* Wobble Vertical */
+.hvr-bounce-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-
-#projects {
-	text-align: center;
+.hvr-bounce-out:hover, .hvr-bounce-out:focus, .hvr-bounce-out:active {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
-
-#projects img{
-	height: 200px;
-	width: 200px;
-	padding: 3%;
-}
-
-#Experiences {
-	padding-left: 8%;
-	padding-right: 8%;
-	padding-bottom: 2%;
-	border-top: solid;
-	border-width: 1px;
-	border-color: #BDBDBD;
-	background-color: #F9F9F9;
-}
-
-#Experiences ul {
-	list-style-type: none;
-}
-
-.drawing {
- padding: 0px;
- margin: 0px;
-}
-
-#timeline {
- margin: 20px;
-}
-
-.tlDateLabel {
- position: relative;
- color: #888;
- text-align: right;
- font-style: italic;
- display: inline-block;
- width: 80px;
-}
-
-.tlEventFlag {
-	width: 200px;
- /*background-color: #5cac73;*/
- background-color: #4A4A4A;
- font-size: 15px;
- padding: 4px 0px 4px 5px;
- color: #fff;
- cursor: pointer;
- display: inline-block;
-}
-
-.tlEventExpand {
- width: 100%;
- /*background-color: #5cac73;*/
- background-color: #4A4A4A;
- font-size: 15px;
- padding: 5px;
- color: #fff;
-}
-
-.tlEventIcon {
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	margin: 5px;
-	border-width: 10px;
-	border-color: #ffffff;
-	border-style: solid;
-	-webkit-box-shadow: 0px 0px 5px 1px rgba(128,125,128,1);
-	-moz-box-shadow: 0px 0px 5px 1px rgba(128,125,128,1);
-	box-shadow: 0px 0px 5px 1px rgba(128,125,128,1);
-}
-
-/*phone*/
-@media only screen 
-  and (min-device-width: 340px) 
-  and (max-device-width: 660px) {
-
-}
-
-/*ipad*/
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) {
-
-}
-
-
-
